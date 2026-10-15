@@ -1,0 +1,374 @@
+{
+    "activity-old": {
+        "recognition": "OCR",
+        "expected": "等级",
+        "action": "Click",
+        "target": [
+            150,
+            185,
+            0,
+            0
+        ],
+        "post_delay": 2000,
+        "next": [
+            "activity-wind"
+        ]
+    },
+    "activity-wind": {
+        "recognition": "OCR",
+        "expected": [
+            "风",
+            "起",
+            "漠",
+            "朔"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "activity-Travelling",
+            "activity-wind"
+        ]
+    },
+    "activity-Travelling": {
+        "recognition": "OCR",
+        "expected": [
+            "携游",
+            "携",
+            "游"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "activity-season",
+            "activity-Moving",
+            "activity-Deer-chirping",
+            "activity-Bluebird",
+            "activity-city",
+            "activity-Pegasus",
+            "activity-Everything",
+            "activity-guard",
+            "activity-river",
+            "activity-longevity",
+            "activity-Miles",
+            "activity-person"
+        ]
+    },
+    "activity-season": {
+        "recognition": "OCR",
+        "expected": [
+            "谷",
+            "雨",
+            "谷雨"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-season"
+        ]
+    },
+    "activity-Moving": {
+        "recognition": "OCR",
+        "expected": [
+            "动如",
+            "参商"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-Moving"
+        ]
+    },
+    "activity-Deer-chirping": {
+        "recognition": "OCR",
+        "expected": [
+            "鹿鸣",
+            "九色"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-Deer-chirping"
+        ]
+    },
+    "activity-Bluebird": {
+        "recognition": "OCR",
+        "expected": [
+            "青鸟",
+            "问路"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-Bluebird"
+        ]
+    },
+    "activity-city": {
+        "recognition": "OCR",
+        "expected": [
+            "煌煌",
+            "此城"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-city"
+        ]
+    },
+    "activity-Pegasus": {
+        "recognition": "OCR",
+        "expected": [
+            "天马",
+            "行空"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-Pegasus"
+        ]
+    },
+    "activity-Everything": {
+        "recognition": "OCR",
+        "expected": [
+            "万物",
+            "三生"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-Everything"
+        ]
+    },
+    "activity-guard": {
+        "recognition": "OCR",
+        "expected": [
+            "守宝",
+            "之龙"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-guard"
+        ]
+    },
+    "activity-river": {
+        "recognition": "OCR",
+        "expected": [
+            "千江",
+            "有水"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-river"
+        ]
+    },
+    "activity-longevity": {
+        "recognition": "OCR",
+        "expected": [
+            "无寿",
+            "者相"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Skip",
+            "activity-Begin",
+            "activity-longevity"
+        ]
+    },
+    "activity-Miles": {
+        "recognition": "OCR",
+        "expected": [
+            "万里",
+            "无云"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-Miles"
+        ]
+    },
+    "activity-person": {
+        "recognition": "OCR",
+        "expected": [
+            "见之",
+            "故人"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "fast",
+            "activity-zhandou",
+            "activity-Begin",
+            "activity-person"
+        ]
+    },
+    "activity-zhandou": {
+        "recognition": "OCR",
+        "expected": [
+            "开始",
+            "开",
+            "始"
+        ],
+        "next": [
+            "activity-Begin",
+            "activity-Skip",
+            "activity-home"
+        ]
+    },
+    "activity-home": {
+        "recognition": "TemplateMatch",
+        "template": "Startup/10.png",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "start-convened"
+        ]
+    },
+    "activity-Begin": {
+        "recognition": "OCR",
+        "expected": [
+            "开始",
+            "战斗",
+            "始"
+        ],
+        "action": "Click",
+        "post_delay": 3000,
+        "next": [
+            "activity-Begin",
+            "activity-Skip",
+            "activity-attention",
+            "activity-automatic"
+        ]
+    },
+    "activity-Skip": {
+        "recognition": "TemplateMatch",
+        "template": "activity\\04.png",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "activity-obtain",
+            "activity-Begin",
+            "activity-Skip"
+        ]
+    },
+    "activity-obtain": {
+        "recognition": "OCR",
+        "expected": [
+            "获得",
+            "物品"
+        ],
+        "action": "Click",
+        "post_delay": 7000,
+        "next": [
+            "activity-Begin",
+            "activity-Skip"
+        ]
+    },
+    "activity-attention": {
+        "recognition": "OCR",
+        "expected": [
+            "留意",
+            "代班",
+            "敌方",
+            "行动"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "activity-Begin",
+            "activity-automatic",
+            "activity-attention",
+            "activity-appraise"
+        ]
+    },
+    "activity-automatic": {
+        "recognition": "OCR",
+        "expected": [
+            "自动"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "activity-attention",
+            "activity-Begin"
+        ]
+    },
+    "activity-fail": {
+        "recognition": "OCR",
+        "expected": [
+            "未能达到",
+            "是否结算"
+        ],
+        "action": "Click",
+        "target": [
+            770,
+            430,
+            0,
+            0
+        ],
+        "post_delay": 2000,
+        "next": [
+            "activity-appraise",
+            "activity-determine",
+            "activity-fail"
+        ]
+    },
+    "activity-appraise": {
+        "recognition": "OCR",
+        "expected": [
+            "评级",
+            "奖励"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "activity-determine",
+            "activity-appraise"
+        ]
+    },
+    "activity-determine": {
+        "recognition": "OCR",
+        "expected": [
+            "确定"
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "activity-determine",
+            "activity-Skip"
+        ]
+    }
+}

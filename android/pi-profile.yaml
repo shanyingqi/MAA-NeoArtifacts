@@ -1,0 +1,32 @@
+# MWA → MaaFwApp 打包配方（手机挂机精简版）
+# local.properties: pi.profile=C:/Users/l/Downloads/MWA-main/android/pi-profile.yaml
+
+assets: ../assets
+
+include:
+  - interface.json
+  - resource_picli/**
+
+exclude:
+  # 旧 PC 资源（目录若仍存在）
+  - resource/**
+  - MaaCommonAssets/**
+  # 文本说明不必进包
+  - "**/*.md"
+  - "**/*.bak"
+
+display:
+  foreground: true
+  presets:
+    - label: 720P
+      width: 1280
+      height: 720
+      dpi: 240
+    - label: 1080P
+      width: 1920
+      height: 1080
+      dpi: 280
+
+app:
+  id: mwa
+  label: MWA 物华弥新

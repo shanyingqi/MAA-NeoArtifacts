@@ -1,0 +1,136 @@
+{
+    "blueprint-all": {
+        "next": [
+            "entry_dispath_eight",
+            "blueprint-tearoom",
+            "blueprint-one",
+            "blueprint-home",
+            "blueprint-back",
+            "blueprint-convened",
+            "[JumpBack]Exception-handling-remind",
+            "[JumpBack]Exception-handling-nurturance-one"
+        ]
+    },
+    "entry_dispath_eight": {
+        "recognition": "TemplateMatch",
+        "template": "Company/d_company.png",
+        "action": "Click",
+        "post_delay": 7000,
+        "next": [
+            "blueprint-tearoom",
+            "blueprint-one",
+            "blueprint-home",
+            "blueprint-back",
+            "blueprint-convened",
+            "[JumpBack]Exception-handling-remind",
+            "[JumpBack]Exception-handling-nurturance-one"
+        ]
+    },
+    "blueprint-tearoom": {
+        "recognition": "OCR",
+        "expected": "茶室",
+        "action": "Click",
+        "post_delay": 2000,
+        "roi": [
+            965,
+            365,
+            155,
+            295
+        ],
+        "next": [
+            "blueprint-one",
+            "blueprint-back",
+            "blueprint-home"
+        ]
+    },
+    "blueprint-one": {
+        "recognition": "OCR",
+        "expected": "蓝图",
+        "action": "Click",
+        "post_delay": 2000,
+        "roi": [
+            880,
+            10,
+            400,
+            160
+        ],
+        "next": [
+            "blueprint-Receive",
+            "combine-home",
+            "blueprint-back",
+            "blueprint-home"
+        ]
+    },
+    "blueprint-Receive": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "post_delay": 2000,
+        "action": "Click",
+        "roi": [
+            1160,
+            130,
+            120,
+            90
+        ],
+        "next": [
+            "blueprint-get",
+            "combine-home",
+            "blueprint-back",
+            "blueprint-home"
+        ]
+    },
+    "blueprint-get": {
+        "recognition": "OCR",
+        "expected": "得",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "blueprint-Receive",
+            "combine-home",
+            "blueprint-back",
+            "blueprint-home"
+        ]
+    },
+    "blueprint-home": {
+        "recognition": "TemplateMatch",
+        "template": "Startup/10.png",
+        "action": "Click",
+        "post_delay": 3000,
+        "next": [
+            "entry_dispath_eight",
+            "blueprint-tearoom",
+            "blueprint-one",
+            "blueprint-convened"
+        ]
+    },
+    "blueprint-back": {
+        "recognition": "TemplateMatch",
+        "template": "Collect/06.png",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "entry_dispath_eight",
+            "blueprint-tearoom",
+            "blueprint-one",
+            "blueprint-home",
+            "blueprint-convened",
+            "combine-home"
+        ]
+    },
+    "blueprint-convened": {
+        "recognition": "TemplateMatch",
+        "template": "Startup/11.png",
+        "roi": [
+            906,
+            340,
+            170,
+            205
+        ],
+        "post_delay": 3000,
+        "next": [
+            "entry_dispath_eight",
+            "blueprint-tearoom",
+            "blueprint-one"
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "drink_a_2day_water": {
+        "next": [
+            "drink_open_plus",
+            "drink_open_plus_ocr",
+            "max_water",
+            "Swipe_drink",
+            "drink",
+            "[JumpBack]Exception-handling-remind",
+            "[JumpBack]Exception-handling-nurturance-one"
+        ]
+    },
+    "drink_open_plus": {
+        "recognition": "TemplateMatch",
+        "template": "Mainpage/stamina.png",
+        "threshold": 0.6,
+        "roi": [
+            1180,
+            250,
+            90,
+            80
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "max_water",
+            "Swipe_drink",
+            "drink",
+            "[JumpBack]Exception-handling-remind",
+            "[JumpBack]Exception-handling-nurturance-one"
+        ]
+    },
+    "drink_open_plus_ocr": {
+        "recognition": "OCR",
+        "expected": "执行",
+        "roi": [
+            1080,
+            220,
+            200,
+            130
+        ],
+        "action": "Click",
+        "target": [
+            1205,
+            270,
+            30,
+            30
+        ],
+        "post_delay": 1000,
+        "next": [
+            "max_water",
+            "Swipe_drink",
+            "drink",
+            "[JumpBack]Exception-handling-remind",
+            "[JumpBack]Exception-handling-nurturance-one"
+        ]
+    },
+    "Swipe_drink": {
+        "action": "Swipe",
+        "begin": [
+            400,
+            245,
+            0,
+            0
+        ],
+        "end": [
+            400,
+            445,
+            0,
+            0
+        ],
+        "next": [
+            "drink"
+        ]
+    }
+}
