@@ -1,16 +1,11 @@
-# MWA 手机挂机精简包
+# MWA 安卓挂机包
 
-## 最新 APK
+物华弥新日常助手的手机端，基于 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 跑任务管线，资源与任务定义来自 [MAWHA/MWA](https://github.com/MAWHA/MWA)。
 
-- 路径：`android/dist/app-debug.apk`
-- 包名：`com.aliothmoon.maafw.mwa`
-- 资源版本：`0.3.17-mobile`
-- versionCode：`3`（覆盖安装会重解 pi.zip）
-- 架构：arm64-v8a
+上游与相关项目：
 
-## 安装测试
-
-1. 覆盖安装本 APK
-2. Shizuku 授权 + 通知/电池白名单
-3. 后台模式 **720P**
-4. 试跑：启动 → 每日礼包 → 邮箱 → 领取日常 → 关闭游戏
+| 项目 | 地址 |
+| --- | --- |
+| MWA（经验来源） | https://github.com/MAWHA/MWA |
+| MaaFramework | https://github.com/MaaXYZ/MaaFramework |
+| MAA（经验来源） | https://github.com/MaaAssistantArknights/MaaAssistantArknights |
