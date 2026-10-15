@@ -454,3 +454,8 @@ debug
 # MWA
 MWA
 .nicegui
+
+# Android build output
+android/dist/*.apk
+android/dist/*.apk.idsig
+
